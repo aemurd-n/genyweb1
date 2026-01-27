@@ -8,7 +8,7 @@
   "description": "Geny Systems - Enterprise AI Solutions Website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/geny-systems.git"
+    "url": "git+https://github.com/aemurd-n/genyweb1.git"
   },
   "dependencies": {
     "@asseinfo/react-kanban": "2.2.0",
