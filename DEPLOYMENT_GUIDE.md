@@ -24,9 +24,11 @@ First, commit all your recent changes:
 
 ```bash
 git add .
-git commit -m "Configure for GitHub Pages deployment with custom domain"
+git commit -m "Configure for GitHub Pages deployment with custom domain and fix routing links"
 git push origin main
 ```
+
+**Note**: All internal navigation links have been fixed to use React Router's `RouterLink` instead of regular `href` attributes. This ensures proper hash-based routing (`/#/page`) with HashRouter.
 
 ## Step 3: Deploy to GitHub Pages
 

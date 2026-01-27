@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Card, CardContent, Button, Box } from "@mui/material";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
-import { useParams } from "react-router-dom";
+import { useParams, Link as RouterLink } from "react-router-dom";
 import { services, serviceDetails } from "data/services";
 
 const ServiceDetail = () => {
@@ -88,7 +88,7 @@ const ServiceDetail = () => {
           <MDTypography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
             Ready to get started?
           </MDTypography>
-          <Button variant="contained" color="primary" href="/contact">
+          <Button component={RouterLink} to="/contact" variant="contained" color="primary">
             Contact Our Team
           </Button>
         </MDBox>

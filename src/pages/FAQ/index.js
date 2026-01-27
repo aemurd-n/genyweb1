@@ -3,6 +3,7 @@ import { Container, Accordion, AccordionSummary, AccordionDetails, Button, Box }
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Link as RouterLink } from "react-router-dom";
 import { faqItems } from "data/faq";
 
 const FAQ = () => {
@@ -57,9 +58,10 @@ const FAQ = () => {
             Our team is ready to help. Get in touch with us for a consultation.
           </MDTypography>
           <Button
+            component={RouterLink}
+            to="/contact"
             variant="contained"
             color="primary"
-            href="/contact"
             sx={{
               color: "white !important",
               backgroundColor: "primary.main",
