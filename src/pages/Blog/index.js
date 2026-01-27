@@ -37,6 +37,7 @@ const Blog = () => {
           <Box sx={{ display: "flex", gap: 2, mb: 4, maxWidth: 800, mx: "auto", flexDirection: { xs: "column", md: "row" } }}>
             <TextField
               fullWidth
+              label="Search"
               placeholder="Search posts..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}

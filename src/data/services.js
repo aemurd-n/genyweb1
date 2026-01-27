@@ -3,6 +3,7 @@ import StorageIcon from "@mui/icons-material/Storage";
 import BuildIcon from "@mui/icons-material/Build";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 import SettingsIcon from "@mui/icons-material/Settings";
+import TuneIcon from "@mui/icons-material/Tune";
 
 export const services = [
   {
@@ -86,12 +87,32 @@ export const services = [
     ]
   },
   {
+    id: "fine-tuning",
+    name: "AI Model Fine-tuning",
+    description: "Optimize models for your specific use case",
+    icon: TuneIcon,
+    fullDescription: `Fine-tune foundation models to excel at your specific tasks. Improve accuracy, reduce costs, and achieve superior performance tailored to your domain.
+
+    Fine-tuning Services:
+    - Domain-specific model training
+    - Custom dataset preparation
+    - Performance benchmarking
+    - Model optimization and compression
+    - Continuous retraining pipelines`,
+    benefits: [
+      "Higher accuracy for your use case",
+      "Reduced inference costs",
+      "Better domain understanding",
+      "Competitive advantage"
+    ]
+  },
+  {
     id: "custom",
     name: "Custom AI Solutions",
     description: "Tailored implementations for complex problems",
     icon: SettingsIcon,
     fullDescription: `We don't believe in one-size-fits-all. Our expert team designs custom AI solutions tailored to your specific business challenges.
-    
+
     Our Process:
     1. Deep discovery of your needs
     2. Architecture design and planning
@@ -146,6 +167,16 @@ export const serviceDetails = {
       { title: "Data Pipeline", desc: "Orchestrate complex data workflows" },
       { title: "Incident Response", desc: "Automated detection and response workflows" },
       { title: "Optimization", desc: "Continuous process optimization and improvement" }
+    ]
+  },
+  "fine-tuning": {
+    name: "AI Model Fine-tuning",
+    description: "Specialized models for superior performance",
+    useCases: [
+      { title: "Domain Adaptation", desc: "Fine-tune models for healthcare, legal, finance, or other specialized domains" },
+      { title: "Task Optimization", desc: "Achieve state-of-the-art results on specific classification or generation tasks" },
+      { title: "Multilingual Support", desc: "Enhance model performance for non-English languages" },
+      { title: "Cost Reduction", desc: "Use smaller fine-tuned models instead of expensive large models" }
     ]
   },
   custom: {

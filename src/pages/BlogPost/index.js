@@ -51,7 +51,7 @@ const BlogPost = () => {
             component="img"
             src={post.image}
             alt={post.title}
-            sx={{ width: "100%", height: 400, objectFit: "cover", borderRadius: 2, mb: 4 }}
+            sx={{ width: "100%", height: 200, objectFit: "cover", borderRadius: 2, mb: 4 }}
           />
         </MDBox>
 
