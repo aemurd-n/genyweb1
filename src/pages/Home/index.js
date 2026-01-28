@@ -8,18 +8,21 @@ import BenefitCard from "components/BenefitCard";
 import NewsletterSignup from "components/NewsletterSignup";
 import { services } from "data/services";
 import { benefits } from "data/benefits";
+import { useTranslation } from "react-i18next";
 import StorageIcon from "@mui/icons-material/Storage";
 import SpeedIcon from "@mui/icons-material/Speed";
 import SecurityIcon from "@mui/icons-material/Security";
 
 const Home = () => {
+  const { t } = useTranslation(['home', 'common']);
+
   return (
     <MDBox component="main">
       {/* Hero Section */}
       <HeroSection
-        title="Enterprise AI Solutions Built For You"
-        subtitle="Geny Systems delivers intelligent automation through cutting-edge LLM chatbots, RAG systems, and AI agents—tailored for enterprises and innovative startups."
-        ctaText="Contact Sales"
+        title={t('home:hero.title')}
+        subtitle={t('home:hero.subtitle')}
+        ctaText={t('home:hero.ctaText')}
         ctaLink="/contact"
       />
 
@@ -27,10 +30,10 @@ const Home = () => {
       <MDBox sx={{ py: 6, px: 2 }}>
         <Container maxWidth="lg">
           <MDTypography variant="h3" sx={{ mb: 4, textAlign: "center", fontWeight: "bold" }}>
-            What We Do
+            {t('home:sections.whatWeDo')}
           </MDTypography>
           <Grid container spacing={3}>
-            {services.slice(0, 5).map((service) => (
+            {services.map((service) => (
               <Grid item xs={12} sm={6} md={4} key={service.id}>
                 <ServiceCard service={service} />
               </Grid>
@@ -43,12 +46,15 @@ const Home = () => {
       <MDBox sx={{ py: 6, px: 2, backgroundColor: "rgba(224, 245, 254, 0.3)" }}>
         <Container maxWidth="lg">
           <MDTypography variant="h3" sx={{ mb: 4, textAlign: "center", fontWeight: "bold" }}>
-            Why Choose Geny Systems
+            {t('home:sections.whyChoose')}
           </MDTypography>
           <Grid container spacing={3}>
             {benefits.map((benefit) => (
               <Grid item xs={12} sm={6} md={3} key={benefit.id}>
-                <BenefitCard benefit={benefit} />
+                <BenefitCard benefit={{
+                  title: t(`home:benefits.${benefit.translationKey}.title`),
+                  description: t(`home:benefits.${benefit.translationKey}.description`)
+                }} />
               </Grid>
             ))}
           </Grid>
@@ -61,10 +67,10 @@ const Home = () => {
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
               <MDTypography variant="h4" sx={{ mb: 2, fontWeight: "bold" }}>
-                Advanced RAG Systems
+                {t('home:sections.advancedRAG.title')}
               </MDTypography>
               <MDTypography variant="body1" sx={{ mb: 3, lineHeight: 1.8 }}>
-                Our Retrieval-Augmented Generation systems provide context-aware responses by combining the power of large language models with your proprietary data. Achieve higher accuracy and relevance in every interaction.
+                {t('home:sections.advancedRAG.description')}
               </MDTypography>
               <Button
                 variant="contained"
@@ -79,7 +85,7 @@ const Home = () => {
                   }
                 }}
               >
-                Learn More
+                {t('common:cta.learnMore')}
               </Button>
             </Grid>
             <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>

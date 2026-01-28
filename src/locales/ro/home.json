@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "Soluții Enterprise AI Construite Pentru Tine",
+    "subtitle": "Geny Systems oferă automatizare inteligentă prin chatbot-uri LLM de ultimă generație, sisteme RAG și agenți AI—personalizate pentru întreprinderi și startup-uri inovatoare.",
+    "ctaText": "Contactează Vânzări"
+  },
+  "sections": {
+    "whatWeDo": "Ce Facem",
+    "whyChoose": "De Ce Să Alegi Geny Systems",
+    "advancedRAG": {
+      "title": "Sisteme RAG Avansate",
+      "description": "Sistemele noastre de Generare Augmentată prin Regăsire oferă răspunsuri contextuale prin combinarea puterii modelelor lingvistice mari cu datele tale proprietare. Obține acuratețe și relevanță mai mari în fiecare interacțiune."
+    }
+  },
+  "benefits": {
+    "expertTeam": {
+      "title": "Echipă de Experți",
+      "description": "Experiență profundă în arhitectura sistemelor combinată cu inovație AI de ultimă generație"
+    },
+    "productionReady": {
+      "title": "Pregătit pentru Producție",
+      "description": "Implementare de nivel enterprise din prima zi, construită pentru scalabilitate și fiabilitate"
+    },
+    "flexibleScalable": {
+      "title": "Flexibil & Scalabil",
+      "description": "Soluții care cresc odată cu nevoile afacerii tale, de la startup-uri la întreprinderi"
+    },
+    "innovationFocused": {
+      "title": "Focalizat pe Inovație",
+      "description": "Îmbunătățire continuă cu cele mai recente progrese AI și cele mai bune practici"
+    }
+  }
+}

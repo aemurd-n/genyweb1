@@ -1,0 +1,178 @@
+{
+  "pageTitle": "Serviciile Noastre",
+  "pageSubtitle": "Soluții Enterprise AI personalizate pentru a-ți transforma afacerea",
+  "chatbots": {
+    "name": "Chatbot-uri Bazate pe LLM",
+    "description": "AI conversațional inteligent pentru suport clienți, implicare și automatizare",
+    "fullDescription": "Soluțiile noastre de chatbot bazate pe LLM folosesc cele mai recente modele lingvistice pentru a oferi conversații naturale, contextuale. Perfecte pentru suport clienți, calificare lead-uri și implicare 24/7.\n\nCaracteristici:\n- Suport multi-limbă\n- Analiză de sentiment\n- Escaladare fără întreruperi către agenți umani\n- Integrare cu sistemele tale existente\n- Învățare și îmbunătățire în timp real",
+    "benefits": [
+      "Reduceți costurile de suport cu 60%",
+      "Îmbunătățiți scorurile de satisfacție ale clienților",
+      "Disponibilitate 24/7",
+      "Gestionează multiple conversații simultan"
+    ],
+    "useCases": [
+      {
+        "title": "Suport Clienți",
+        "desc": "Reduceți volumul de tichete cu 70% cu agenți de suport alimentați de AI"
+      },
+      {
+        "title": "Calificare Vânzări",
+        "desc": "Calificați și direcționați automat lead-uri către echipele de vânzări"
+      },
+      {
+        "title": "Onboarding Produs",
+        "desc": "Ghidați utilizatorii prin funcționalitățile produsului în mod interactiv"
+      },
+      {
+        "title": "Automatizare FAQ",
+        "desc": "Răspundeți la întrebări frecvente instant și precis"
+      }
+    ]
+  },
+  "rag": {
+    "name": "Generare Augmentată prin Regăsire",
+    "description": "Răspunsuri contextuale din datele tale",
+    "fullDescription": "Sistemele RAG combină puterea modelelor lingvistice mari cu datele tale proprietare pentru a oferi răspunsuri precise și contextuale. Nu mai îți face griji pentru informații depășite.\n\nCapacități Cheie:\n- Indexează depozitele tale de documente\n- Regăsire de date în timp real\n- Răspunsuri verificate\n- Citări transparente ale surselor\n- Actualizări continue ale cunoștințelor",
+    "benefits": [
+      "Răspunsuri 100% precise",
+      "Folosește datele tale proprietare",
+      "AI explicabil cu citări",
+      "Reduce riscul de halucinații"
+    ],
+    "useCases": [
+      {
+        "title": "Bază de Cunoștințe Companie",
+        "desc": "Acces instant la toate politicile și procedurile companiei"
+      },
+      {
+        "title": "Întrebări și Răspunsuri Documente",
+        "desc": "Pune întrebări despre colecții masive de documente"
+      },
+      {
+        "title": "Legal & Conformitate",
+        "desc": "Regăsește reglementări relevante și informații de conformitate"
+      },
+      {
+        "title": "Asistent Cercetare",
+        "desc": "Sintetizează informații din multiple lucrări de cercetare"
+      }
+    ]
+  },
+  "mcp": {
+    "name": "Instrumente MCP",
+    "description": "Model Context Protocol pentru integrare AI fără cusur",
+    "fullDescription": "Implementează instrumente Model Context Protocol pentru a extinde capacitățile AI cu integrări personalizate. Conectează-te la orice API, bază de date sau serviciu.\n\nIntegrări Suportate:\n- API-uri REST\n- Endpoint-uri GraphQL\n- Interogări baze de date\n- Servicii terțe\n- Logică de afaceri personalizată",
+    "benefits": [
+      "Extinde capacitățile AI",
+      "Integrări personalizate",
+      "Protocol standardizat",
+      "Întreținere ușoară"
+    ],
+    "useCases": [
+      {
+        "title": "Integrare API",
+        "desc": "Conectează AI la API-urile și serviciile tale existente"
+      },
+      {
+        "title": "Acces Date",
+        "desc": "Acordă agenților AI acces la baze de date în timp real"
+      },
+      {
+        "title": "Logică de Afaceri",
+        "desc": "Încorporează reguli complexe de afaceri în fluxuri de lucru AI"
+      },
+      {
+        "title": "Servicii Terțe",
+        "desc": "Integrează platforme SaaS fără probleme"
+      }
+    ]
+  },
+  "agents": {
+    "name": "Agenți AI",
+    "description": "Sisteme autonome care acționează și învață",
+    "fullDescription": "Construiește agenți AI autonomi care pot lua decizii, acționa și se îmbunătățesc în timp. De la automatizarea fluxurilor de lucru la procese complexe de afaceri.\n\nCapacități Agent:\n- Framework-uri de luare a deciziilor\n- Fluxuri de lucru multi-pas\n- Recuperare în caz de eroare\n- Optimizare performanță\n- Jurnale de audit și logging",
+    "benefits": [
+      "Automatizează fluxuri de lucru complexe",
+      "Reduce intervenția manuală",
+      "Îmbunătățește eficiența proceselor",
+      "Scalează operațiunile"
+    ],
+    "useCases": [
+      {
+        "title": "Automatizare Procese",
+        "desc": "Automatizează procese de afaceri end-to-end"
+      },
+      {
+        "title": "Pipeline Date",
+        "desc": "Orchestrează fluxuri de lucru complexe de date"
+      },
+      {
+        "title": "Răspuns la Incidente",
+        "desc": "Fluxuri de lucru automate de detectare și răspuns"
+      },
+      {
+        "title": "Optimizare",
+        "desc": "Optimizare și îmbunătățire continuă a proceselor"
+      }
+    ]
+  },
+  "fine-tuning": {
+    "name": "Fine-tuning Modele AI",
+    "description": "Optimizează modele pentru cazul tău specific de utilizare",
+    "fullDescription": "Fine-tuning modelelor fundamentale pentru a excela la sarcinile tale specifice. Îmbunătățește acuratețea, reduce costurile și obține performanțe superioare adaptate domeniului tău.\n\nServicii Fine-tuning:\n- Antrenament model specific domeniului\n- Pregătire set de date personalizat\n- Benchmarking performanță\n- Optimizare și compresie model\n- Pipeline-uri de reantrenare continuă",
+    "benefits": [
+      "Acuratețe mai mare pentru cazul tău de utilizare",
+      "Costuri de inferență reduse",
+      "Înțelegere mai bună a domeniului",
+      "Avantaj competitiv"
+    ],
+    "useCases": [
+      {
+        "title": "Adaptare Domeniu",
+        "desc": "Fine-tuning modele pentru sănătate, juridic, finanțe sau alte domenii specializate"
+      },
+      {
+        "title": "Optimizare Sarcină",
+        "desc": "Obține rezultate de ultimă generație la sarcini specifice de clasificare sau generare"
+      },
+      {
+        "title": "Suport Multilingv",
+        "desc": "Îmbunătățește performanța modelului pentru limbi non-engleze"
+      },
+      {
+        "title": "Reducere Costuri",
+        "desc": "Folosește modele mai mici cu fine-tuning în loc de modele mari costisitoare"
+      }
+    ]
+  },
+  "custom": {
+    "name": "Soluții AI Personalizate",
+    "description": "Implementări personalizate pentru probleme complexe",
+    "fullDescription": "Nu credem în soluții universale. Echipa noastră de experți proiectează soluții AI personalizate adaptate provocărilor specifice ale afacerii tale.\n\nProcesul Nostru:\n1. Descoperire profundă a nevoilor tale\n2. Proiectare arhitectură și planificare\n3. Dezvoltare proof of concept\n4. Implementare completă\n5. Optimizare continuă",
+    "benefits": [
+      "Construit special pentru nevoile tale",
+      "Îndrumare expert pe parcurs",
+      "Arhitectură scalabilă",
+      "Parteneriat pe termen lung"
+    ],
+    "useCases": [
+      {
+        "title": "Consultanță Strategică",
+        "desc": "Îndrumare expert în strategie și adoptare AI"
+      },
+      {
+        "title": "Dezvoltare MVP",
+        "desc": "Prototipare rapidă a soluțiilor AI"
+      },
+      {
+        "title": "Implementare Enterprise",
+        "desc": "Desfășurare și integrare AI la scară largă"
+      },
+      {
+        "title": "Optimizare",
+        "desc": "Reglaj performanță și optimizare costuri"
+      }
+    ]
+  }
+}

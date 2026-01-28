@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "footer": {
+    "companyName": "Geny Systems",
+    "description": "Enterprise AI Solutions Built For You. Delivering intelligent automation through cutting-edge LLM chatbots, RAG systems, and AI agents.",
+    "quickLinks": "Quick Links",
+    "contactTitle": "Contact",
+    "email": "Email: info@geny.ai",
+    "readyToTransform": "Ready to transform your business with AI?",
+    "copyright": "© {{year}} Geny Systems. All rights reserved."
+  },
+  "cta": {
+    "contactSales": "Contact Sales",
+    "learnMore": "Learn More",
+    "readMore": "Read More →",
+    "getStarted": "Ready to get started?",
+    "contactTeam": "Contact Our Team",
+    "backToBlog": "← Back to Blog",
+    "subscribe": "Subscribe",
+    "sendEmail": "Send Email"
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Subscribe to our newsletter for the latest insights on AI and enterprise solutions.",
+    "emailPlaceholder": "Enter your email",
+    "successMessage": "Thank you for subscribing!"
+  },
+  "common": {
+    "search": "Search",
+    "category": "Category",
+    "tags": "Tags",
+    "by": "By",
+    "useCases": "Use Cases",
+    "keyBenefits": "Key Benefits",
+    "serviceNotFound": "Service not found",
+    "postNotFound": "Post not found",
+    "noResults": "No posts found. Try different search terms or filters."
+  }
+}

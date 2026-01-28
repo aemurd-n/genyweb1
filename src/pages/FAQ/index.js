@@ -4,10 +4,13 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link as RouterLink } from "react-router-dom";
-import { faqItems } from "data/faq";
+import { useTranslation } from "react-i18next";
 
 const FAQ = () => {
+  const { t } = useTranslation(['faq', 'common']);
   const [expanded, setExpanded] = useState(false);
+
+  const faqItems = t('faq:items', { returnObjects: true });
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -17,24 +20,24 @@ const FAQ = () => {
     <MDBox component="main" sx={{ py: 6 }}>
       <Container maxWidth="lg">
         <MDTypography variant="h3" sx={{ mb: 2, textAlign: "center", fontWeight: "bold" }}>
-          Frequently Asked Questions
+          {t('faq:pageTitle')}
         </MDTypography>
         <MDTypography variant="body1" sx={{ mb: 6, textAlign: "center", color: "text.secondary" }}>
-          Find answers to common questions about our services and solutions
+          {t('faq:pageSubtitle')}
         </MDTypography>
 
         <MDBox sx={{ mb: 6 }}>
-          {faqItems.map((item) => (
+          {faqItems.map((item, index) => (
             <Accordion
-              key={item.id}
-              expanded={expanded === `panel${item.id}`}
-              onChange={handleChange(`panel${item.id}`)}
+              key={index}
+              expanded={expanded === `panel${index}`}
+              onChange={handleChange(`panel${index}`)}
               sx={{ mb: 2 }}
             >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
-                aria-controls={`panel${item.id}-content`}
-                id={`panel${item.id}-header`}
+                aria-controls={`panel${index}-content`}
+                id={`panel${index}-header`}
               >
                 <MDTypography variant="h6" sx={{ fontWeight: 600 }}>
                   {item.question}
@@ -52,10 +55,10 @@ const FAQ = () => {
         {/* CTA Section */}
         <MDBox sx={{ textAlign: "center", backgroundColor: "rgba(14, 165, 233, 0.1)", p: 4, borderRadius: 2 }}>
           <MDTypography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
-            Still have questions?
+            {t('faq:cta.title')}
           </MDTypography>
           <MDTypography variant="body1" sx={{ mb: 3, color: "text.secondary" }}>
-            Our team is ready to help. Get in touch with us for a consultation.
+            {t('faq:cta.subtitle')}
           </MDTypography>
           <Button
             component={RouterLink}
@@ -71,7 +74,7 @@ const FAQ = () => {
               }
             }}
           >
-            Contact Sales
+            {t('common:cta.contactSales')}
           </Button>
         </MDBox>
       </Container>

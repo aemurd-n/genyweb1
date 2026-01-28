@@ -4,8 +4,11 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import ServiceCard from "components/ServiceCard";
 import { services } from "data/services";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation('services');
+
   return (
     <MDBox component="main">
       {/* Page Header */}
@@ -19,10 +22,10 @@ const Services = () => {
       >
         <Container maxWidth="md">
           <MDTypography variant="h2" sx={{ mb: 2, fontWeight: "bold", color: "white !important" }}>
-            Our Services
+            {t('pageTitle')}
           </MDTypography>
           <MDTypography variant="h6" sx={{ opacity: 0.95, color: "white !important" }}>
-            Enterprise AI solutions tailored to transform your business
+            {t('pageSubtitle')}
           </MDTypography>
         </Container>
       </MDBox>

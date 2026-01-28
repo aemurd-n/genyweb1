@@ -4,9 +4,10 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation('contact');
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,7 +41,7 @@ const Contact = () => {
     // Show success message
     setStatus({
       type: "success",
-      message: "Opening your email client... If it doesn't open automatically, please email us at info@geny.ai"
+      message: t('form.successMessage')
     });
 
     // Reset form after a delay
@@ -56,10 +57,10 @@ const Contact = () => {
         {/* Header */}
         <MDBox sx={{ mb: 6, textAlign: "center" }}>
           <MDTypography variant="h2" sx={{ mb: 2, fontWeight: "bold", color: "text.primary" }}>
-            Get in Touch
+            {t('pageTitle')}
           </MDTypography>
           <MDTypography variant="h6" sx={{ color: "text.secondary" }}>
-            Let's discuss how Geny Systems can transform your business with AI
+            {t('pageSubtitle')}
           </MDTypography>
         </MDBox>
 
@@ -87,7 +88,7 @@ const Contact = () => {
                       <TextField
                         fullWidth
                         required
-                        label="Full Name"
+                        label={t('form.fullName')}
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
@@ -98,7 +99,7 @@ const Contact = () => {
                         fullWidth
                         required
                         type="email"
-                        label="Email Address"
+                        label={t('form.email')}
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
@@ -107,7 +108,7 @@ const Contact = () => {
                     <Grid item xs={12}>
                       <TextField
                         fullWidth
-                        label="Company Name"
+                        label={t('form.company')}
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
@@ -119,11 +120,11 @@ const Contact = () => {
                         required
                         multiline
                         rows={6}
-                        label="Message"
+                        label={t('form.message')}
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder="Tell us about your project and requirements..."
+                        placeholder={t('form.messagePlaceholder')}
                       />
                     </Grid>
                     <Grid item xs={12}>
@@ -133,9 +134,12 @@ const Contact = () => {
                         color="primary"
                         size="large"
                         fullWidth
-                        sx={{ py: 1.5 }}
+                        sx={{
+                          py: 1.5,
+                          color: "white !important"
+                        }}
                       >
-                        Send Email
+                        {t('form.submitButton')}
                       </Button>
                     </Grid>
                   </Grid>
@@ -153,10 +157,10 @@ const Contact = () => {
                     <EmailIcon sx={{ fontSize: 30, color: "primary.main", mr: 2 }} />
                     <Box>
                       <MDTypography variant="h6" sx={{ fontWeight: "bold", color: "text.primary" }}>
-                        Email Us
+                        {t('cards.emailUs.title')}
                       </MDTypography>
                       <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
-                        info@geny.ai
+                        {t('cards.emailUs.subtitle')}
                       </MDTypography>
                     </Box>
                   </Box>
@@ -169,28 +173,10 @@ const Contact = () => {
                     <PhoneIcon sx={{ fontSize: 30, color: "primary.main", mr: 2 }} />
                     <Box>
                       <MDTypography variant="h6" sx={{ fontWeight: "bold", color: "text.primary" }}>
-                        Call Us
+                        {t('cards.callUs.title')}
                       </MDTypography>
                       <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
-                        +1 (555) 123-4567
-                      </MDTypography>
-                    </Box>
-                  </Box>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent sx={{ p: 3 }}>
-                  <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-                    <LocationOnIcon sx={{ fontSize: 30, color: "primary.main", mr: 2 }} />
-                    <Box>
-                      <MDTypography variant="h6" sx={{ fontWeight: "bold", color: "text.primary" }}>
-                        Visit Us
-                      </MDTypography>
-                      <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
-                        San Francisco, CA
-                        <br />
-                        United States
+                        {t('cards.callUs.subtitle')}
                       </MDTypography>
                     </Box>
                   </Box>
@@ -200,10 +186,10 @@ const Contact = () => {
               <Card sx={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
                 <CardContent sx={{ p: 3 }}>
                   <MDTypography variant="h6" sx={{ color: "white", fontWeight: "bold", mb: 1 }}>
-                    Enterprise Solutions
+                    {t('cards.enterprise.title')}
                   </MDTypography>
                   <MDTypography variant="body2" sx={{ color: "white", opacity: 0.9 }}>
-                    Looking for enterprise-level AI solutions? Our team is ready to discuss custom implementations tailored to your needs.
+                    {t('cards.enterprise.subtitle')}
                   </MDTypography>
                 </CardContent>
               </Card>

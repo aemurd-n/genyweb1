@@ -6,14 +6,25 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import { Link as RouterLink } from "react-router-dom";
 import blogPosts from "data/blog-posts";
+import { useTranslation } from "react-i18next";
 
 const Blog = () => {
+  const { t } = useTranslation(['blog', 'blog-posts', 'common']);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", ...new Set(blogPosts.map((post) => post.category))];
+  // Get translated categories
+  const translatedPosts = blogPosts.map(post => ({
+    ...post,
+    title: t(`blog-posts:${post.translationKey}.title`),
+    excerpt: t(`blog-posts:${post.translationKey}.excerpt`),
+    category: t(`blog-posts:${post.translationKey}.category`),
+    tags: t(`blog-posts:${post.translationKey}.tags`, { returnObjects: true })
+  }));
 
-  const filteredPosts = blogPosts.filter((post) => {
+  const categories = ["All", ...new Set(translatedPosts.map((post) => post.category))];
+
+  const filteredPosts = translatedPosts.filter((post) => {
     const matchesSearch =
       post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
@@ -27,18 +38,18 @@ const Blog = () => {
         {/* Header */}
         <MDBox sx={{ mb: 6, textAlign: "center" }}>
           <MDTypography variant="h2" sx={{ mb: 2, fontWeight: "bold", color: "text.primary" }}>
-            Blog & Insights
+            {t('blog:pageTitle')}
           </MDTypography>
           <MDTypography variant="h6" sx={{ color: "text.secondary", mb: 4, maxWidth: 600, mx: "auto" }}>
-            Latest thoughts on AI, automation, and enterprise solutions
+            {t('blog:pageSubtitle')}
           </MDTypography>
 
           {/* Search and Filter */}
           <Box sx={{ display: "flex", gap: 2, mb: 4, maxWidth: 800, mx: "auto", flexDirection: { xs: "column", md: "row" } }}>
             <TextField
               fullWidth
-              label="Search"
-              placeholder="Search posts..."
+              label={t('common:common.search')}
+              placeholder={t('blog:searchPlaceholder')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               size="medium"
@@ -56,7 +67,7 @@ const Blog = () => {
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
               size="medium"
-              label="Category"
+              label={t('common:common.category')}
               sx={{
                 minWidth: { xs: "100%", md: 200 },
                 backgroundColor: "white"
@@ -162,7 +173,7 @@ const Blog = () => {
                         }
                       }}
                     >
-                      Read More →
+                      {t('common:cta.readMore')}
                     </Button>
                   </CardActions>
                 </Card>
@@ -172,7 +183,7 @@ const Blog = () => {
         ) : (
           <MDBox sx={{ textAlign: "center", py: 6 }}>
             <MDTypography variant="h6" sx={{ color: "text.secondary" }}>
-              No posts found. Try different search terms or filters.
+              {t('common:common.noResults')}
             </MDTypography>
           </MDBox>
         )}

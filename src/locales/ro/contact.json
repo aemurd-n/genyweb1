@@ -1,0 +1,27 @@
+{
+  "pageTitle": "Contactează-ne",
+  "pageSubtitle": "Hai să discutăm cum poate Geny Systems să-ți transforme afacerea cu AI",
+  "form": {
+    "fullName": "Nume Complet",
+    "email": "Adresă Email",
+    "company": "Nume Companie",
+    "message": "Mesaj",
+    "messagePlaceholder": "Spune-ne despre proiectul și cerințele tale...",
+    "submitButton": "Trimite Email",
+    "successMessage": "Se deschide clientul tău de email... Dacă nu se deschide automat, te rugăm să ne trimiți email la info@geny.ai"
+  },
+  "cards": {
+    "emailUs": {
+      "title": "Trimite-ne Email",
+      "subtitle": "info@geny.ai"
+    },
+    "callUs": {
+      "title": "Sună-ne",
+      "subtitle": "+1 (647) 367-0690"
+    },
+    "enterprise": {
+      "title": "Soluții Enterprise",
+      "subtitle": "Cauți soluții Enterprise AI? Echipa noastră este pregătită să discute implementări personalizate adaptate nevoilor tale."
+    }
+  }
+}

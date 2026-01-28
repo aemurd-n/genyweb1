@@ -3,8 +3,11 @@ import { AppBar, Toolbar, Container, Button, Box } from "@mui/material";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import { Link as RouterLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "components/LanguageSwitcher";
 
 function Navbar({ brand }) {
+  const { t } = useTranslation('common');
   return (
     <AppBar
       position="sticky"
@@ -49,7 +52,7 @@ function Navbar({ brand }) {
             </Box>
           </MDBox>
 
-          <Box sx={{ display: "flex", gap: 1 }}>
+          <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
             <Button
               component={RouterLink}
               to="/"
@@ -62,7 +65,7 @@ function Navbar({ brand }) {
                 "&:hover": { color: "primary.main" }
               }}
             >
-              Home
+              {t('nav.home')}
             </Button>
             <Button
               component={RouterLink}
@@ -76,7 +79,7 @@ function Navbar({ brand }) {
                 "&:hover": { color: "primary.main" }
               }}
             >
-              Services
+              {t('nav.services')}
             </Button>
             <Button
               component={RouterLink}
@@ -90,7 +93,7 @@ function Navbar({ brand }) {
                 "&:hover": { color: "primary.main" }
               }}
             >
-              Blog
+              {t('nav.blog')}
             </Button>
             <Button
               component={RouterLink}
@@ -104,8 +107,9 @@ function Navbar({ brand }) {
                 "&:hover": { color: "primary.main" }
               }}
             >
-              FAQ
+              {t('nav.faq')}
             </Button>
+            <LanguageSwitcher />
             <Button
               component={RouterLink}
               to="/contact"
@@ -124,7 +128,7 @@ function Navbar({ brand }) {
                 }
               }}
             >
-              Contact
+              {t('nav.contact')}
             </Button>
           </Box>
         </Toolbar>

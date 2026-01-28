@@ -1,0 +1,178 @@
+{
+  "pageTitle": "Our Services",
+  "pageSubtitle": "Enterprise AI solutions tailored to transform your business",
+  "chatbots": {
+    "name": "LLM-Based Chatbots",
+    "description": "Intelligent conversational AI for customer support, engagement, and automation",
+    "fullDescription": "Our LLM-based chatbot solutions leverage the latest language models to provide natural, context-aware conversations. Perfect for customer support, lead qualification, and 24/7 engagement.\n\nFeatures:\n- Multi-language support\n- Sentiment analysis\n- Seamless escalation to human agents\n- Integration with your existing systems\n- Real-time learning and improvement",
+    "benefits": [
+      "Reduce support costs by 60%",
+      "Improve customer satisfaction scores",
+      "24/7 availability",
+      "Handle multiple conversations simultaneously"
+    ],
+    "useCases": [
+      {
+        "title": "Customer Support",
+        "desc": "Reduce ticket volume by 70% with AI-powered support agents"
+      },
+      {
+        "title": "Sales Qualification",
+        "desc": "Automatically qualify and route leads to sales teams"
+      },
+      {
+        "title": "Product Onboarding",
+        "desc": "Guide users through product features interactively"
+      },
+      {
+        "title": "FAQ Automation",
+        "desc": "Answer common questions instantly and accurately"
+      }
+    ]
+  },
+  "rag": {
+    "name": "Retrieval-Augmented Generation",
+    "description": "Context-aware responses from your data",
+    "fullDescription": "RAG systems combine the power of large language models with your proprietary data to provide accurate, contextual responses. Never worry about outdated information again.\n\nKey Capabilities:\n- Indexes your document repositories\n- Real-time data retrieval\n- Fact-checked responses\n- Transparent source citations\n- Continuous knowledge updates",
+    "benefits": [
+      "100% accurate responses",
+      "Uses your proprietary data",
+      "Explainable AI with citations",
+      "Reduces hallucination risk"
+    ],
+    "useCases": [
+      {
+        "title": "Company Knowledge Base",
+        "desc": "Instant access to all company policies and procedures"
+      },
+      {
+        "title": "Document Q&A",
+        "desc": "Ask questions about massive document collections"
+      },
+      {
+        "title": "Legal & Compliance",
+        "desc": "Retrieve relevant regulations and compliance information"
+      },
+      {
+        "title": "Research Assistant",
+        "desc": "Synthesize information from multiple research papers"
+      }
+    ]
+  },
+  "mcp": {
+    "name": "MCP Tools",
+    "description": "Model Context Protocol for seamless AI integration",
+    "fullDescription": "Implement Model Context Protocol tools to extend your AI capabilities with custom integrations. Connect to any API, database, or service.\n\nSupported Integrations:\n- REST APIs\n- GraphQL endpoints\n- Database queries\n- Third-party services\n- Custom business logic",
+    "benefits": [
+      "Extend AI capabilities",
+      "Custom integrations",
+      "Standardized protocol",
+      "Easy maintenance"
+    ],
+    "useCases": [
+      {
+        "title": "API Integration",
+        "desc": "Connect AI to your existing APIs and services"
+      },
+      {
+        "title": "Data Access",
+        "desc": "Grant AI agents access to real-time databases"
+      },
+      {
+        "title": "Business Logic",
+        "desc": "Embed complex business rules in AI workflows"
+      },
+      {
+        "title": "Third-party Services",
+        "desc": "Integrate SaaS platforms seamlessly"
+      }
+    ]
+  },
+  "agents": {
+    "name": "AI Agents",
+    "description": "Autonomous systems that take action and learn",
+    "fullDescription": "Build autonomous AI agents that can make decisions, take actions, and improve over time. From workflow automation to complex business processes.\n\nAgent Capabilities:\n- Decision-making frameworks\n- Multi-step workflows\n- Error recovery\n- Performance optimization\n- Audit trails and logging",
+    "benefits": [
+      "Automate complex workflows",
+      "Reduce manual intervention",
+      "Improve process efficiency",
+      "Scale operations"
+    ],
+    "useCases": [
+      {
+        "title": "Process Automation",
+        "desc": "Automate end-to-end business processes"
+      },
+      {
+        "title": "Data Pipeline",
+        "desc": "Orchestrate complex data workflows"
+      },
+      {
+        "title": "Incident Response",
+        "desc": "Automated detection and response workflows"
+      },
+      {
+        "title": "Optimization",
+        "desc": "Continuous process optimization and improvement"
+      }
+    ]
+  },
+  "fine-tuning": {
+    "name": "AI Model Fine-tuning",
+    "description": "Optimize models for your specific use case",
+    "fullDescription": "Fine-tune foundation models to excel at your specific tasks. Improve accuracy, reduce costs, and achieve superior performance tailored to your domain.\n\nFine-tuning Services:\n- Domain-specific model training\n- Custom dataset preparation\n- Performance benchmarking\n- Model optimization and compression\n- Continuous retraining pipelines",
+    "benefits": [
+      "Higher accuracy for your use case",
+      "Reduced inference costs",
+      "Better domain understanding",
+      "Competitive advantage"
+    ],
+    "useCases": [
+      {
+        "title": "Domain Adaptation",
+        "desc": "Fine-tune models for healthcare, legal, finance, or other specialized domains"
+      },
+      {
+        "title": "Task Optimization",
+        "desc": "Achieve state-of-the-art results on specific classification or generation tasks"
+      },
+      {
+        "title": "Multilingual Support",
+        "desc": "Enhance model performance for non-English languages"
+      },
+      {
+        "title": "Cost Reduction",
+        "desc": "Use smaller fine-tuned models instead of expensive large models"
+      }
+    ]
+  },
+  "custom": {
+    "name": "Custom AI Solutions",
+    "description": "Tailored implementations for complex problems",
+    "fullDescription": "We don't believe in one-size-fits-all. Our expert team designs custom AI solutions tailored to your specific business challenges.\n\nOur Process:\n1. Deep discovery of your needs\n2. Architecture design and planning\n3. Proof of concept development\n4. Full implementation\n5. Ongoing optimization",
+    "benefits": [
+      "Purpose-built for your needs",
+      "Expert guidance throughout",
+      "Scalable architecture",
+      "Long-term partnership"
+    ],
+    "useCases": [
+      {
+        "title": "Strategic Consulting",
+        "desc": "Expert guidance on AI strategy and adoption"
+      },
+      {
+        "title": "MVP Development",
+        "desc": "Rapid prototyping of AI solutions"
+      },
+      {
+        "title": "Enterprise Implementation",
+        "desc": "Large-scale AI deployment and integration"
+      },
+      {
+        "title": "Optimization",
+        "desc": "Performance tuning and cost optimization"
+      }
+    ]
+  }
+}

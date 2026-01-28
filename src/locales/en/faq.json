@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Frequently Asked Questions",
+  "pageSubtitle": "Find answers to common questions about our services and solutions",
+  "cta": {
+    "title": "Still have questions?",
+    "subtitle": "Our team is ready to help. Get in touch with us for a consultation."
+  },
+  "items": [
+    {
+      "question": "What is Retrieval-Augmented Generation (RAG)?",
+      "answer": "RAG is a technique that combines large language models with your proprietary data sources. It retrieves relevant information from your documents or databases and uses that context to generate accurate, grounded responses. This reduces hallucination and ensures responses are based on your actual data."
+    },
+    {
+      "question": "How long does implementation typically take?",
+      "answer": "Implementation timeline varies based on complexity. A simple chatbot integration might take 4-6 weeks, while enterprise-scale solutions with RAG and custom integrations typically take 8-12 weeks. We'll provide a detailed timeline during the discovery phase."
+    },
+    {
+      "question": "Can you integrate with our existing systems?",
+      "answer": "Yes! Our solutions are designed for integration with existing systems. We support REST APIs, GraphQL, database connections, and can work with virtually any tech stack you're currently using."
+    },
+    {
+      "question": "What about data privacy and security?",
+      "answer": "Data security is our top priority. We implement enterprise-grade protections including AES-256 encryption at rest and in transit, role-based access controls (RBAC), comprehensive audit logging, and full GDPR compliance. All data processing occurs within your controlled infrastructure with zero third-party data sharing, ensuring maximum safety, privacy, and operational security through our self-managed, code-level safeguards."
+    },
+    {
+      "question": "Do you provide ongoing support?",
+      "answer": "Absolutely. We offer comprehensive support plans including monitoring, optimization, updates, and strategic consultation. We treat our implementations as long-term partnerships."
+    },
+    {
+      "question": "What's the cost structure?",
+      "answer": "We offer flexible pricing models including fixed-price projects, time-and-materials, and managed services. Contact our sales team for a custom quote based on your requirements."
+    },
+    {
+      "question": "Can AI agents really automate complex processes?",
+      "answer": "Yes, AI agents can orchestrate complex multi-step workflows. They can make decisions, call APIs, query databases, and handle error conditions—all while maintaining audit trails and compliance."
+    },
+    {
+      "question": "What makes MCP tools valuable?",
+      "answer": "MCP (Model Context Protocol) tools provide a standardized way to extend AI capabilities. They allow AI systems to take actions in the real world—like querying databases, calling APIs, or updating records—making AI agents much more powerful."
+    }
+  ]
+}

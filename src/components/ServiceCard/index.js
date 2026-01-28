@@ -3,8 +3,10 @@ import { Card, CardContent, Box, Button } from "@mui/material";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import { Link as RouterLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ service }) => {
+  const { t } = useTranslation('services');
   const Icon = service.icon;
 
   return (
@@ -35,10 +37,10 @@ const ServiceCard = ({ service }) => {
           />
         </MDBox>
         <MDTypography variant="h5" sx={{ mb: 1.5, fontWeight: "bold", color: "text.primary" }}>
-          {service.name}
+          {t(`${service.translationKey}.name`)}
         </MDTypography>
         <MDTypography variant="body2" sx={{ mb: 3, color: "text.secondary", lineHeight: 1.6 }}>
-          {service.description}
+          {t(`${service.translationKey}.description`)}
         </MDTypography>
         <Button
           component={RouterLink}
@@ -59,7 +61,7 @@ const ServiceCard = ({ service }) => {
             }
           }}
         >
-          Learn More →
+          {t('common:cta.learnMore')} →
         </Button>
       </CardContent>
     </Card>

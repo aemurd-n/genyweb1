@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "Enterprise AI Solutions Built For You",
+    "subtitle": "Geny Systems delivers intelligent automation through cutting-edge LLM chatbots, RAG systems, and AI agents—tailored for enterprises and innovative startups.",
+    "ctaText": "Contact Sales"
+  },
+  "sections": {
+    "whatWeDo": "What We Do",
+    "whyChoose": "Why Choose Geny Systems",
+    "advancedRAG": {
+      "title": "Advanced RAG Systems",
+      "description": "Our Retrieval-Augmented Generation systems provide context-aware responses by combining the power of large language models with your proprietary data. Achieve higher accuracy and relevance in every interaction."
+    }
+  },
+  "benefits": {
+    "expertTeam": {
+      "title": "Expert Team",
+      "description": "Deep experience in systems architecture combined with cutting-edge AI innovation"
+    },
+    "productionReady": {
+      "title": "Production-Ready",
+      "description": "Enterprise-grade implementation from day one, built for scale and reliability"
+    },
+    "flexibleScalable": {
+      "title": "Flexible & Scalable",
+      "description": "Solutions that grow with your business needs, from startups to enterprises"
+    },
+    "innovationFocused": {
+      "title": "Innovation-Focused",
+      "description": "Continuous improvement with the latest AI advances and best practices"
+    }
+  }
+}

@@ -3,24 +3,26 @@ import { Container, Grid, Box } from "@mui/material";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import { Link as RouterLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation('common');
   return (
     <MDBox component="footer" sx={{ py: 6, px: 2, backgroundColor: "grey.100" }}>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
             <MDTypography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>
-              Geny Systems
+              {t('footer.companyName')}
             </MDTypography>
             <MDTypography variant="body2" sx={{ color: "text.secondary", lineHeight: 1.8 }}>
-              Enterprise AI Solutions Built For You. Delivering intelligent automation through cutting-edge LLM chatbots, RAG systems, and AI agents.
+              {t('footer.description')}
             </MDTypography>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <MDTypography variant="h6" sx={{ mb: 2, fontWeight: "bold" }}>
-              Quick Links
+              {t('footer.quickLinks')}
             </MDTypography>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
               <MDTypography
@@ -29,7 +31,7 @@ function Footer() {
                 variant="body2"
                 sx={{ color: "text.secondary", textDecoration: "none", "&:hover": { color: "primary.main" } }}
               >
-                Home
+                {t('nav.home')}
               </MDTypography>
               <MDTypography
                 component={RouterLink}
@@ -37,7 +39,7 @@ function Footer() {
                 variant="body2"
                 sx={{ color: "text.secondary", textDecoration: "none", "&:hover": { color: "primary.main" } }}
               >
-                Services
+                {t('nav.services')}
               </MDTypography>
               <MDTypography
                 component={RouterLink}
@@ -45,7 +47,7 @@ function Footer() {
                 variant="body2"
                 sx={{ color: "text.secondary", textDecoration: "none", "&:hover": { color: "primary.main" } }}
               >
-                Blog
+                {t('nav.blog')}
               </MDTypography>
               <MDTypography
                 component={RouterLink}
@@ -53,26 +55,26 @@ function Footer() {
                 variant="body2"
                 sx={{ color: "text.secondary", textDecoration: "none", "&:hover": { color: "primary.main" } }}
               >
-                FAQ
+                {t('nav.faq')}
               </MDTypography>
             </Box>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <MDTypography variant="h6" sx={{ mb: 2, fontWeight: "bold" }}>
-              Contact
+              {t('footer.contactTitle')}
             </MDTypography>
             <MDTypography variant="body2" sx={{ color: "text.secondary", lineHeight: 1.8 }}>
-              Email: info@geny.ai
+              {t('footer.email')}
               <br />
-              Ready to transform your business with AI?
+              {t('footer.readyToTransform')}
             </MDTypography>
           </Grid>
         </Grid>
 
         <MDBox sx={{ mt: 4, pt: 3, borderTop: "1px solid", borderColor: "grey.300", textAlign: "center" }}>
           <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
-            &copy; {new Date().getFullYear()} Geny Systems. All rights reserved.
+            {t('footer.copyright', { year: new Date().getFullYear() })}
           </MDTypography>
         </MDBox>
       </Container>

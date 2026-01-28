@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Container, TextField, Button, Box } from "@mui/material";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
+import { useTranslation } from "react-i18next";
 
 function NewsletterSignup() {
+  const { t } = useTranslation('common');
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -23,15 +25,15 @@ function NewsletterSignup() {
       <Container maxWidth="md">
         <Box sx={{ textAlign: "center" }}>
           <MDTypography variant="h3" sx={{ mb: 2, fontWeight: "bold", color: "white !important" }}>
-            Stay Updated
+            {t('newsletter.title')}
           </MDTypography>
           <MDTypography variant="body1" sx={{ mb: 4, opacity: 0.9, color: "white !important" }}>
-            Subscribe to our newsletter for the latest insights on AI and enterprise solutions.
+            {t('newsletter.subtitle')}
           </MDTypography>
 
           {submitted ? (
             <MDTypography variant="h6" sx={{ color: "white !important" }}>
-              Thank you for subscribing!
+              {t('newsletter.successMessage')}
             </MDTypography>
           ) : (
             <Box
@@ -48,7 +50,7 @@ function NewsletterSignup() {
               <TextField
                 fullWidth
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t('newsletter.emailPlaceholder')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -99,7 +101,7 @@ function NewsletterSignup() {
                   }
                 }}
               >
-                Subscribe
+                {t('cta.subscribe')}
               </Button>
             </Box>
           )}

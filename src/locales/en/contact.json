@@ -1,0 +1,27 @@
+{
+  "pageTitle": "Get in Touch",
+  "pageSubtitle": "Let's discuss how Geny Systems can transform your business with AI",
+  "form": {
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "company": "Company Name",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project and requirements...",
+    "submitButton": "Send Email",
+    "successMessage": "Opening your email client... If it doesn't open automatically, please email us at info@geny.ai"
+  },
+  "cards": {
+    "emailUs": {
+      "title": "Email Us",
+      "subtitle": "info@geny.ai"
+    },
+    "callUs": {
+      "title": "Call Us",
+      "subtitle": "+1 (647) 367-0690"
+    },
+    "enterprise": {
+      "title": "Enterprise Solutions",
+      "subtitle": "Looking for enterprise-level AI solutions? Our team is ready to discuss custom implementations tailored to your needs."
+    }
+  }
+}

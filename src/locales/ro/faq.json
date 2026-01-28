@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Întrebări Frecvente",
+  "pageSubtitle": "Găsește răspunsuri la întrebările comune despre serviciile și soluțiile noastre",
+  "cta": {
+    "title": "Mai ai întrebări?",
+    "subtitle": "Echipa noastră este pregătită să te ajute. Contactează-ne pentru o consultație."
+  },
+  "items": [
+    {
+      "question": "Ce este Generarea Augmentată prin Regăsire (RAG)?",
+      "answer": "RAG este o tehnică care combină modelele lingvistice mari cu sursele tale de date proprietare. Regăsește informații relevante din documentele sau bazele tale de date și folosește acel context pentru a genera răspunsuri precise, fundamentate. Acest lucru reduce halucinațiile și asigură că răspunsurile se bazează pe datele tale reale."
+    },
+    {
+      "question": "Cât durează de obicei implementarea?",
+      "answer": "Perioada de implementare variază în funcție de complexitate. O integrare simplă de chatbot poate dura 4-6 săptămâni, în timp ce soluțiile la scară enterprise cu RAG și integrări personalizate durează de obicei 8-12 săptămâni. Vom oferi un calendar detaliat în faza de descoperire."
+    },
+    {
+      "question": "Puteți integra cu sistemele noastre existente?",
+      "answer": "Da! Soluțiile noastre sunt proiectate pentru integrare cu sistemele existente. Suportăm API-uri REST, GraphQL, conexiuni la baze de date și putem lucra cu practic orice stivă tehnologică pe care o folosești în prezent."
+    },
+    {
+      "question": "Ce zici de confidențialitatea și securitatea datelor?",
+      "answer": "Securitatea datelor este prioritatea noastră numărul unu. Implementăm protecții de nivel enterprise, inclusiv criptare AES-256 în repaus și în tranzit, controale de acces bazate pe roluri (RBAC), logging comprehensiv de audit și conformitate completă GDPR. Întreaga procesare a datelor are loc în infrastructura ta controlată, fără partajare de date cu terțe părți, asigurând siguranță maximă, confidențialitate și securitate operațională prin măsurile noastre auto-gestionate la nivel de cod."
+    },
+    {
+      "question": "Oferiți suport continuu?",
+      "answer": "Absolut. Oferim planuri de suport comprehensive, inclusiv monitorizare, optimizare, actualizări și consultanță strategică. Tratăm implementările noastre ca parteneriate pe termen lung."
+    },
+    {
+      "question": "Care este structura de costuri?",
+      "answer": "Oferim modele de prețuri flexibile, inclusiv proiecte cu preț fix, timp-și-materiale și servicii gestionate. Contactează echipa noastră de vânzări pentru o ofertă personalizată bazată pe cerințele tale."
+    },
+    {
+      "question": "Pot agenții AI chiar să automatizeze procese complexe?",
+      "answer": "Da, agenții AI pot orchestra fluxuri de lucru complexe cu mai mulți pași. Pot lua decizii, apela API-uri, interoga baze de date și gestiona condiții de eroare—toate menținând în același timp jurnale de audit și conformitate."
+    },
+    {
+      "question": "Ce face instrumentele MCP valoroase?",
+      "answer": "Instrumentele MCP (Model Context Protocol) oferă o modalitate standardizată de a extinde capacitățile AI. Permit sistemelor AI să acționeze în lumea reală—cum ar fi interogarea bazelor de date, apelarea API-urilor sau actualizarea înregistrărilor—făcând agenții AI mult mai puternici."
+    }
+  ]
+}

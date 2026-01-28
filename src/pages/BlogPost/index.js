@@ -6,21 +6,43 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import { useParams, Link as RouterLink } from "react-router-dom";
 import blogPosts from "data/blog-posts";
+import { useTranslation } from "react-i18next";
 
 const BlogPost = () => {
   const { slug } = useParams();
+  const { t } = useTranslation(['blog-posts', 'blog', 'common']);
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
     return (
       <Container maxWidth="lg" sx={{ py: 6 }}>
-        <MDTypography variant="h4">Post not found</MDTypography>
+        <MDTypography variant="h4">{t('common:common.postNotFound')}</MDTypography>
         <Button component={RouterLink} to="/blog" variant="contained" sx={{ mt: 2 }}>
-          Back to Blog
+          {t('common:cta.backToBlog')}
         </Button>
       </Container>
     );
   }
+
+  const translatedPost = {
+    ...post,
+    title: t(`blog-posts:${post.translationKey}.title`),
+    author: t(`blog-posts:${post.translationKey}.author`),
+    category: t(`blog-posts:${post.translationKey}.category`),
+    excerpt: t(`blog-posts:${post.translationKey}.excerpt`),
+    content: t(`blog-posts:${post.translationKey}.content`),
+    tags: t(`blog-posts:${post.translationKey}.tags`, { returnObjects: true })
+  };
+
+  // Get translated related posts
+  const relatedPosts = blogPosts
+    .filter((p) => p.id !== post.id)
+    .slice(0, 2)
+    .map(p => ({
+      ...p,
+      title: t(`blog-posts:${p.translationKey}.title`),
+      excerpt: t(`blog-posts:${p.translationKey}.excerpt`)
+    }));
 
   return (
     <MDBox sx={{ py: 6, backgroundColor: "background.default" }}>
@@ -28,29 +50,29 @@ const BlogPost = () => {
         {/* Header */}
         <MDBox sx={{ mb: 4 }}>
           <Button component={RouterLink} to="/blog" color="primary" sx={{ mb: 2 }}>
-            ← Back to Blog
+            {t('common:cta.backToBlog')}
           </Button>
 
           <MDTypography variant="h2" sx={{ mb: 2, fontWeight: "bold" }}>
-            {post.title}
+            {translatedPost.title}
           </MDTypography>
 
           {/* Meta Information */}
           <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 4, flexWrap: "wrap" }}>
             <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
-              By {post.author}
+              {t('common:common.by')} {translatedPost.author}
             </MDTypography>
             <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
               {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
             </MDTypography>
-            <Chip label={post.category} size="small" variant="outlined" />
+            <Chip label={translatedPost.category} size="small" variant="outlined" />
           </Box>
 
           {/* Featured Image */}
           <Box
             component="img"
             src={post.image}
-            alt={post.title}
+            alt={translatedPost.title}
             sx={{ width: "100%", height: 200, objectFit: "cover", borderRadius: 2, mb: 4 }}
           />
         </MDBox>
@@ -69,9 +91,10 @@ const BlogPost = () => {
             "& a": { color: "primary.main", textDecoration: "none", "&:hover": { textDecoration: "underline" } },
           }}
           dangerouslySetInnerHTML={{
-            __html: post.content
+            __html: translatedPost.content
               .replace(/<h1>/g, "<h1 style='font-size: 2rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem;'>")
               .replace(/<h2>/g, "<h2 style='font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem; margin-bottom: 1rem;'>")
+              .replace(/<h3>/g, "<h3 style='font-size: 1.25rem; font-weight: bold; margin-top: 1.25rem; margin-bottom: 0.75rem;'>")
               .replace(/<p>/g, "<p style='margin-bottom: 1rem; line-height: 1.8;'>")
               .replace(/<ul>/g, "<ul style='margin-bottom: 1rem; padding-left: 2rem;'>")
               .replace(/<li>/g, "<li style='margin-bottom: 0.5rem;'>"),
@@ -83,10 +106,10 @@ const BlogPost = () => {
         {/* Tags */}
         <MDBox sx={{ mb: 6 }}>
           <MDTypography variant="h6" sx={{ mb: 2, fontWeight: "bold" }}>
-            Tags
+            {t('common:common.tags')}
           </MDTypography>
           <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-            {post.tags.map((tag) => (
+            {translatedPost.tags.map((tag) => (
               <Chip key={tag} label={tag} color="primary" variant="filled" />
             ))}
           </Box>
@@ -95,36 +118,33 @@ const BlogPost = () => {
         {/* Related Posts */}
         <MDBox>
           <MDTypography variant="h5" sx={{ mb: 3, fontWeight: "bold" }}>
-            More Articles
+            {t('blog:moreArticles')}
           </MDTypography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" }, gap: 2 }}>
-            {blogPosts
-              .filter((p) => p.id !== post.id)
-              .slice(0, 2)
-              .map((relatedPost) => (
-                <Box
-                  component={RouterLink}
-                  to={`/blog/${relatedPost.slug}`}
-                  key={relatedPost.id}
-                  sx={{
-                    p: 2,
-                    border: "1px solid",
-                    borderColor: "divider",
-                    borderRadius: 2,
-                    textDecoration: "none",
-                    color: "inherit",
-                    transition: "all 0.3s",
-                    "&:hover": { boxShadow: 3, borderColor: "primary.main" },
-                  }}
-                >
-                  <MDTypography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
-                    {relatedPost.title}
-                  </MDTypography>
-                  <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
-                    {relatedPost.excerpt}
-                  </MDTypography>
-                </Box>
-              ))}
+            {relatedPosts.map((relatedPost) => (
+              <Box
+                component={RouterLink}
+                to={`/blog/${relatedPost.slug}`}
+                key={relatedPost.id}
+                sx={{
+                  p: 2,
+                  border: "1px solid",
+                  borderColor: "divider",
+                  borderRadius: 2,
+                  textDecoration: "none",
+                  color: "inherit",
+                  transition: "all 0.3s",
+                  "&:hover": { boxShadow: 3, borderColor: "primary.main" },
+                }}
+              >
+                <MDTypography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
+                  {relatedPost.title}
+                </MDTypography>
+                <MDTypography variant="body2" sx={{ color: "text.secondary" }}>
+                  {relatedPost.excerpt}
+                </MDTypography>
+              </Box>
+            ))}
           </Box>
         </MDBox>
       </Container>

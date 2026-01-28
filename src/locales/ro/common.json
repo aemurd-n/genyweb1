@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "blog": "Blog",
+    "faq": "Întrebări Frecvente",
+    "contact": "Contact"
+  },
+  "footer": {
+    "companyName": "Geny Systems",
+    "description": "Soluții Enterprise AI Construite Pentru Tine. Oferim automatizare inteligentă prin chatbot-uri LLM de ultimă generație, sisteme RAG și agenți AI.",
+    "quickLinks": "Link-uri Rapide",
+    "contactTitle": "Contact",
+    "email": "Email: info@geny.ai",
+    "readyToTransform": "Pregătit să îți transformi afacerea cu AI?",
+    "copyright": "© {{year}} Geny Systems. Toate drepturile rezervate."
+  },
+  "cta": {
+    "contactSales": "Contactează Vânzări",
+    "learnMore": "Află Mai Multe",
+    "readMore": "Citește Mai Mult →",
+    "getStarted": "Pregătit să începi?",
+    "contactTeam": "Contactează Echipa Noastră",
+    "backToBlog": "← Înapoi la Blog",
+    "subscribe": "Abonează-te",
+    "sendEmail": "Trimite Email"
+  },
+  "newsletter": {
+    "title": "Rămâi la Curent",
+    "subtitle": "Abonează-te la newsletter-ul nostru pentru cele mai recente perspective despre AI și soluții enterprise.",
+    "emailPlaceholder": "Introdu email-ul tău",
+    "successMessage": "Mulțumim pentru abonare!"
+  },
+  "common": {
+    "search": "Caută",
+    "category": "Categorie",
+    "tags": "Etichete",
+    "by": "De",
+    "useCases": "Cazuri de Utilizare",
+    "keyBenefits": "Beneficii Cheie",
+    "serviceNotFound": "Serviciul nu a fost găsit",
+    "postNotFound": "Articolul nu a fost găsit",
+    "noResults": "Nu s-au găsit articole. Încearcă alți termeni de căutare sau filtre."
+  }
+}

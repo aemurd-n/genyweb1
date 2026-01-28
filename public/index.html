@@ -42,6 +42,51 @@ Coded by www.creative-tim.com
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
+    <script>
+      // Suppress ResizeObserver errors - must run before React app loads
+      (function() {
+        // Override window.onerror
+        const originalOnError = window.onerror;
+        window.onerror = function(message, source, lineno, colno, error) {
+          if (typeof message === 'string' && message.includes('ResizeObserver')) {
+            return true; // Prevent default error handling
+          }
+          if (originalOnError) {
+            return originalOnError.apply(this, arguments);
+          }
+          return false;
+        };
+
+        // Override console.error
+        const originalConsoleError = console.error;
+        console.error = function() {
+          const args = Array.from(arguments);
+          const errorString = args.join(' ');
+          if (errorString.includes('ResizeObserver')) {
+            return; // Suppress the error
+          }
+          originalConsoleError.apply(console, args);
+        };
+
+        // Capture all errors in capture phase
+        window.addEventListener('error', function(event) {
+          if (event.message && event.message.includes('ResizeObserver')) {
+            event.stopImmediatePropagation();
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }, true);
+
+        // Capture unhandled rejections
+        window.addEventListener('unhandledrejection', function(event) {
+          if (event.reason && event.reason.message && event.reason.message.includes('ResizeObserver')) {
+            event.stopImmediatePropagation();
+            event.stopPropagation();
+            event.preventDefault();
+          }
+        }, true);
+      })();
+    </script>
   </head>
 
   <body>
