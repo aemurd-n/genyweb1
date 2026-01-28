@@ -37,7 +37,7 @@ console.error = (...args) => {
 const debounce = (callback, delay) => {
   let tid;
   return function (...args) {
-    const ctx = self;
+    const ctx = this;
     tid && clearTimeout(tid);
     tid = setTimeout(() => {
       callback.apply(ctx, args);
