@@ -21,6 +21,7 @@ function HeroSection({ title, subtitle, ctaText, ctaLink }) {
         <Box sx={{ textAlign: "center" }}>
           <MDTypography
             variant="h1"
+            component="h1"
             sx={{
               mb: 2.5,
               fontWeight: "bold",
