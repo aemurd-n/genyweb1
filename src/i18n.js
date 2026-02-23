@@ -9,7 +9,7 @@ i18n
     fallbackLng: 'en',
     supportedLngs: ['en', 'ro'],
     defaultNS: 'common',
-    ns: ['common', 'home', 'services', 'contact', 'faq', 'blog', 'blog-posts'],
+    ns: ['common', 'home', 'services', 'solutions', 'contact', 'faq', 'blog', 'blog-posts'],
 
     detection: {
       order: ['localStorage', 'navigator'],
@@ -30,6 +30,7 @@ i18n
         common: require('./locales/en/common.json'),
         home: require('./locales/en/home.json'),
         services: require('./locales/en/services.json'),
+        solutions: require('./locales/en/solutions.json'),
         contact: require('./locales/en/contact.json'),
         faq: require('./locales/en/faq.json'),
         blog: require('./locales/en/blog.json'),
@@ -39,6 +40,7 @@ i18n
         common: require('./locales/ro/common.json'),
         home: require('./locales/ro/home.json'),
         services: require('./locales/ro/services.json'),
+        solutions: require('./locales/ro/solutions.json'),
         contact: require('./locales/ro/contact.json'),
         faq: require('./locales/ro/faq.json'),
         blog: require('./locales/ro/blog.json'),

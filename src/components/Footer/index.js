@@ -35,6 +35,14 @@ function Footer() {
               </MDTypography>
               <MDTypography
                 component={RouterLink}
+                to="/solutions"
+                variant="body2"
+                sx={{ color: "text.secondary", textDecoration: "none", "&:hover": { color: "primary.main" } }}
+              >
+                {t('nav.solutions')}
+              </MDTypography>
+              <MDTypography
+                component={RouterLink}
                 to="/services"
                 variant="body2"
                 sx={{ color: "text.secondary", textDecoration: "none", "&:hover": { color: "primary.main" } }}

@@ -13,6 +13,8 @@ import createCache from "@emotion/cache";
 import Home from "pages/Home";
 import Services from "pages/Services";
 import ServiceDetail from "pages/ServiceDetail";
+import Solutions from "pages/Solutions";
+import SolutionDetail from "pages/SolutionDetail";
 import Blog from "pages/Blog";
 import BlogPost from "pages/BlogPost";
 import FAQ from "pages/FAQ";
@@ -56,6 +58,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/solutions/:id" element={<SolutionDetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/faq" element={<FAQ />} />
@@ -73,6 +77,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/:id" element={<ServiceDetail />} />
+        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/solutions/:id" element={<SolutionDetail />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/faq" element={<FAQ />} />

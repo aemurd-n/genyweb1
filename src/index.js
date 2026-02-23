@@ -16,6 +16,7 @@ Coded by www.creative-tim.com
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import App from "App";
 import "./i18n";
 
@@ -108,9 +109,11 @@ const container = document.getElementById("app");
 const root = createRoot(container);
 
 root.render(
-  <HashRouter>
-    <MaterialUIControllerProvider>
-      <App />
-    </MaterialUIControllerProvider>
-  </HashRouter>
+  <HelmetProvider>
+    <HashRouter>
+      <MaterialUIControllerProvider>
+        <App />
+      </MaterialUIControllerProvider>
+    </HashRouter>
+  </HelmetProvider>
 );

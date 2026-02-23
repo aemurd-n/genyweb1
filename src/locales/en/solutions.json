@@ -1,0 +1,198 @@
+{
+  "pageTitle": "Our Solutions",
+  "pageSubtitle": "AI-powered products built by Geny Systems to solve real business problems",
+  "meta": {
+    "title": "Solutions | Geny Systems",
+    "description": "Explore AI-powered business solutions by Geny Systems. From intelligent receipt scanning to automated expense management, our products help Romanian businesses work smarter."
+  },
+  "edecont": {
+    "name": "eDecont.ro",
+    "description": "AI-powered receipt scanning & expense management for Romanian businesses",
+    "meta": {
+      "title": "eDecont.ro — AI Receipt Scanning & Expense Management | Geny Systems",
+      "description": "Automate receipt processing with AI-powered OCR. eDecont.ro by Geny Systems helps Romanian businesses scan receipts, manage expenses, and stay ANAF-compliant — all in one platform."
+    },
+    "hero": {
+      "tagline": "Smart Expense Management",
+      "subtitle": "Scan receipts with AI, automate expense workflows, and stay compliant with ANAF. Built for Romanian businesses that want to spend less time on paperwork.",
+      "ctaPrimary": "Start Free Trial",
+      "ctaSecondary": "Contact Sales"
+    },
+    "features": {
+      "sectionTitle": "Key Features",
+      "items": [
+        {
+          "title": "AI-Powered OCR",
+          "description": "Snap a photo of any receipt. Our Vision AI extracts vendor, amounts, VAT, and line items automatically — with confidence scoring for every field.",
+          "icon": "DocumentScanner"
+        },
+        {
+          "title": "Expense Management",
+          "description": "Submit, review, and approve expenses with customizable multi-level approval workflows. Track status from draft to approved.",
+          "icon": "AccountBalance"
+        },
+        {
+          "title": "Multi-Fund Allocation",
+          "description": "Split expenses across cost centers and funds with an intelligent rules engine. Automate allocation by category, vendor, or amount.",
+          "icon": "AccountTree"
+        },
+        {
+          "title": "ANAF Integration",
+          "description": "Automatic CUI lookup and validation against the Romanian tax authority database. Verify vendor status, VAT registration, and company details.",
+          "icon": "Verified"
+        },
+        {
+          "title": "AI Chat Assistant",
+          "description": "Ask questions about your expense data in natural language. Get instant insights, summaries, and analysis — in English or Romanian.",
+          "icon": "SmartToy"
+        },
+        {
+          "title": "Reports & Export",
+          "description": "Generate AI-summarized financial reports. Export to Saga XML, QuickBooks IIF, Excel, and CSV for seamless accounting integration.",
+          "icon": "Assessment"
+        }
+      ]
+    },
+    "howItWorks": {
+      "sectionTitle": "How It Works",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Capture",
+          "description": "Take a photo, upload a file, or forward a receipt by email"
+        },
+        {
+          "step": 2,
+          "title": "AI Extracts",
+          "description": "Our AI reads and categorizes all receipt data automatically"
+        },
+        {
+          "step": 3,
+          "title": "Review",
+          "description": "Verify extracted data and assign to funds or cost centers"
+        },
+        {
+          "step": 4,
+          "title": "Collaborate",
+          "description": "Route expenses through approval workflows with your team"
+        },
+        {
+          "step": 5,
+          "title": "Export",
+          "description": "Generate reports and export to your accounting software"
+        }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Simple, Transparent Pricing",
+      "sectionSubtitle": "Start free. Upgrade when you need more.",
+      "currency": "RON",
+      "perMonth": "/mo",
+      "annual": "/yr",
+      "mostPopular": "Most Popular",
+      "tiers": [
+        {
+          "name": "Free",
+          "monthlyPrice": 0,
+          "annualPrice": 0,
+          "description": "For individuals getting started",
+          "highlighted": false,
+          "features": [
+            "10 receipt scans/month",
+            "Basic expense tracking",
+            "1 user",
+            "CSV export"
+          ],
+          "cta": "Get Started"
+        },
+        {
+          "name": "Professional",
+          "monthlyPrice": 79,
+          "annualPrice": 790,
+          "description": "For freelancers and small teams",
+          "highlighted": false,
+          "features": [
+            "150 receipt scans/month",
+            "AI Chat assistant",
+            "Up to 5 users",
+            "All export formats",
+            "ANAF integration",
+            "Basic reports"
+          ],
+          "cta": "Start Free Trial"
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 199,
+          "annualPrice": 1990,
+          "description": "For growing businesses",
+          "highlighted": true,
+          "features": [
+            "500 receipt scans/month",
+            "AI Chat assistant",
+            "Up to 25 users",
+            "All export formats",
+            "ANAF integration",
+            "Advanced reports",
+            "Multi-fund allocation",
+            "Approval workflows",
+            "Priority support"
+          ],
+          "cta": "Start Free Trial"
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 399,
+          "annualPrice": 3990,
+          "description": "For large organizations",
+          "highlighted": false,
+          "features": [
+            "Unlimited receipt scans",
+            "AI Chat assistant",
+            "Unlimited users",
+            "All export formats",
+            "ANAF integration",
+            "Advanced reports + AI summaries",
+            "Multi-fund allocation",
+            "Custom approval workflows",
+            "Priority support",
+            "API access"
+          ],
+          "cta": "Contact Sales"
+        }
+      ]
+    },
+    "integrations": {
+      "sectionTitle": "Integrations",
+      "sectionSubtitle": "Works with the tools you already use",
+      "items": [
+        {
+          "name": "Saga",
+          "description": "Export to Saga XML format"
+        },
+        {
+          "name": "QuickBooks",
+          "description": "Export to QuickBooks IIF"
+        },
+        {
+          "name": "Excel",
+          "description": "Detailed Excel spreadsheets"
+        },
+        {
+          "name": "ANAF",
+          "description": "Romanian tax authority integration"
+        },
+        {
+          "name": "Stripe",
+          "description": "Secure payment processing"
+        }
+      ]
+    },
+    "cta": {
+      "sectionTitle": "Ready to Simplify Your Expense Management?",
+      "sectionSubtitle": "Join Romanian businesses that trust eDecont.ro to handle their receipts and expenses.",
+      "ctaPrimary": "Start Free Trial",
+      "ctaSecondary": "Contact Sales"
+    }
+  }
+}

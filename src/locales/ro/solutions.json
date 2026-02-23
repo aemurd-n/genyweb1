@@ -1,0 +1,198 @@
+{
+  "pageTitle": "Soluțiile Noastre",
+  "pageSubtitle": "Produse alimentate de AI create de Geny Systems pentru a rezolva probleme reale de afaceri",
+  "meta": {
+    "title": "Soluții | Geny Systems",
+    "description": "Descoperă soluțiile de business alimentate de AI de la Geny Systems. De la scanarea inteligentă a bonurilor la gestionarea automatizată a cheltuielilor, produsele noastre ajută afacerile din România să lucreze mai eficient."
+  },
+  "edecont": {
+    "name": "eDecont.ro",
+    "description": "Scanare bonuri cu AI și gestionarea cheltuielilor pentru afaceri din România",
+    "meta": {
+      "title": "eDecont.ro — Scanare Bonuri cu AI și Gestionarea Cheltuielilor | Geny Systems",
+      "description": "Automatizează procesarea bonurilor cu OCR alimentat de AI. eDecont.ro de la Geny Systems ajută afacerile din România să scaneze bonuri, să gestioneze cheltuieli și să rămână conforme cu ANAF — totul într-o singură platformă."
+    },
+    "hero": {
+      "tagline": "Gestionare Inteligentă a Cheltuielilor",
+      "subtitle": "Scanează bonuri cu AI, automatizează fluxurile de cheltuieli și rămâi conform cu ANAF. Creat pentru afacerile din România care vor să petreacă mai puțin timp cu birocrația.",
+      "ctaPrimary": "Începe Gratuit",
+      "ctaSecondary": "Contactează Vânzări"
+    },
+    "features": {
+      "sectionTitle": "Funcționalități Cheie",
+      "items": [
+        {
+          "title": "OCR Alimentat de AI",
+          "description": "Fotografiază orice bon. AI-ul nostru de viziune extrage automat furnizorul, sumele, TVA-ul și articolele — cu scor de încredere pentru fiecare câmp.",
+          "icon": "DocumentScanner"
+        },
+        {
+          "title": "Gestionarea Cheltuielilor",
+          "description": "Trimite, revizuiește și aprobă cheltuieli cu fluxuri de aprobare personalizabile pe mai multe niveluri. Urmărește statusul de la ciornă până la aprobat.",
+          "icon": "AccountBalance"
+        },
+        {
+          "title": "Alocare Multi-Fond",
+          "description": "Împarte cheltuielile între centre de cost și fonduri cu un motor inteligent de reguli. Automatizează alocarea după categorie, furnizor sau sumă.",
+          "icon": "AccountTree"
+        },
+        {
+          "title": "Integrare ANAF",
+          "description": "Căutare și validare automată a CUI-ului în baza de date a autorității fiscale din România. Verifică statusul furnizorului, înregistrarea TVA și detaliile firmei.",
+          "icon": "Verified"
+        },
+        {
+          "title": "Asistent AI Chat",
+          "description": "Pune întrebări despre datele tale de cheltuieli în limbaj natural. Obține perspective instantanee, sumare și analize — în română sau engleză.",
+          "icon": "SmartToy"
+        },
+        {
+          "title": "Rapoarte și Export",
+          "description": "Generează rapoarte financiare sumarizate cu AI. Exportă în Saga XML, QuickBooks IIF, Excel și CSV pentru integrare contabilă fără efort.",
+          "icon": "Assessment"
+        }
+      ]
+    },
+    "howItWorks": {
+      "sectionTitle": "Cum Funcționează",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Captează",
+          "description": "Fotografiază, încarcă un fișier sau trimite un bon prin email"
+        },
+        {
+          "step": 2,
+          "title": "AI-ul Extrage",
+          "description": "AI-ul nostru citește și categorizează automat toate datele de pe bon"
+        },
+        {
+          "step": 3,
+          "title": "Revizuiește",
+          "description": "Verifică datele extrase și alocă-le fondurilor sau centrelor de cost"
+        },
+        {
+          "step": 4,
+          "title": "Colaborează",
+          "description": "Trimite cheltuielile prin fluxurile de aprobare împreună cu echipa ta"
+        },
+        {
+          "step": 5,
+          "title": "Exportă",
+          "description": "Generează rapoarte și exportă în software-ul tău de contabilitate"
+        }
+      ]
+    },
+    "pricing": {
+      "sectionTitle": "Prețuri Simple și Transparente",
+      "sectionSubtitle": "Începe gratuit. Fă upgrade când ai nevoie de mai mult.",
+      "currency": "RON",
+      "perMonth": "/lună",
+      "annual": "/an",
+      "mostPopular": "Cel Mai Popular",
+      "tiers": [
+        {
+          "name": "Gratuit",
+          "monthlyPrice": 0,
+          "annualPrice": 0,
+          "description": "Pentru persoane care fac primii pași",
+          "highlighted": false,
+          "features": [
+            "10 scanări bonuri/lună",
+            "Urmărire de bază a cheltuielilor",
+            "1 utilizator",
+            "Export CSV"
+          ],
+          "cta": "Începe Acum"
+        },
+        {
+          "name": "Profesional",
+          "monthlyPrice": 79,
+          "annualPrice": 790,
+          "description": "Pentru freelanceri și echipe mici",
+          "highlighted": false,
+          "features": [
+            "150 scanări bonuri/lună",
+            "Asistent AI Chat",
+            "Până la 5 utilizatori",
+            "Toate formatele de export",
+            "Integrare ANAF",
+            "Rapoarte de bază"
+          ],
+          "cta": "Începe Gratuit"
+        },
+        {
+          "name": "Business",
+          "monthlyPrice": 199,
+          "annualPrice": 1990,
+          "description": "Pentru afaceri în creștere",
+          "highlighted": true,
+          "features": [
+            "500 scanări bonuri/lună",
+            "Asistent AI Chat",
+            "Până la 25 utilizatori",
+            "Toate formatele de export",
+            "Integrare ANAF",
+            "Rapoarte avansate",
+            "Alocare multi-fond",
+            "Fluxuri de aprobare",
+            "Suport prioritar"
+          ],
+          "cta": "Începe Gratuit"
+        },
+        {
+          "name": "Enterprise",
+          "monthlyPrice": 399,
+          "annualPrice": 3990,
+          "description": "Pentru organizații mari",
+          "highlighted": false,
+          "features": [
+            "Scanări bonuri nelimitate",
+            "Asistent AI Chat",
+            "Utilizatori nelimitați",
+            "Toate formatele de export",
+            "Integrare ANAF",
+            "Rapoarte avansate + sumare AI",
+            "Alocare multi-fond",
+            "Fluxuri de aprobare personalizate",
+            "Suport prioritar",
+            "Acces API"
+          ],
+          "cta": "Contactează Vânzări"
+        }
+      ]
+    },
+    "integrations": {
+      "sectionTitle": "Integrări",
+      "sectionSubtitle": "Funcționează cu instrumentele pe care deja le folosești",
+      "items": [
+        {
+          "name": "Saga",
+          "description": "Export în format Saga XML"
+        },
+        {
+          "name": "QuickBooks",
+          "description": "Export în format QuickBooks IIF"
+        },
+        {
+          "name": "Excel",
+          "description": "Foi de calcul Excel detaliate"
+        },
+        {
+          "name": "ANAF",
+          "description": "Integrare cu autoritatea fiscală din România"
+        },
+        {
+          "name": "Stripe",
+          "description": "Procesare securizată a plăților"
+        }
+      ]
+    },
+    "cta": {
+      "sectionTitle": "Pregătit să Simplifici Gestionarea Cheltuielilor?",
+      "sectionSubtitle": "Alătură-te afacerilor din România care au încredere în eDecont.ro pentru gestionarea bonurilor și cheltuielilor.",
+      "ctaPrimary": "Începe Gratuit",
+      "ctaSecondary": "Contactează Vânzări"
+    }
+  }
+}

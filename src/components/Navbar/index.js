@@ -69,6 +69,20 @@ function Navbar({ brand }) {
             </Button>
             <Button
               component={RouterLink}
+              to="/solutions"
+              color="inherit"
+              sx={{
+                textTransform: "none",
+                fontSize: "1rem",
+                fontWeight: 500,
+                color: "text.primary",
+                "&:hover": { color: "primary.main" }
+              }}
+            >
+              {t('nav.solutions')}
+            </Button>
+            <Button
+              component={RouterLink}
               to="/services"
               color="inherit"
               sx={{
