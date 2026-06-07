@@ -8,6 +8,10 @@ import { useTranslation } from "react-i18next";
 const SolutionCard = ({ solution }) => {
   const { t } = useTranslation('solutions');
   const Icon = solution.icon;
+  const isExternal = Boolean(solution.external && solution.externalUrl);
+  const linkProps = isExternal
+    ? { component: "a", href: solution.externalUrl, target: "_blank", rel: "noopener noreferrer" }
+    : { component: RouterLink, to: `/solutions/${solution.id}` };
 
   return (
     <Card
@@ -17,13 +21,10 @@ const SolutionCard = ({ solution }) => {
         backgroundImage: "none !important",
         borderTop: `4px solid ${solution.accentColor}`,
         boxShadow: "0 2px 12px rgba(0,0,0,0.06) !important",
-        transition: "all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+        transition: "all 0.2s ease",
         "&:hover": {
-          boxShadow: `0 12px 32px rgba(25, 118, 210, 0.18) !important`,
-          transform: "translateY(-8px)",
-          "& .solution-icon": {
-            transform: "scale(1.1) rotate(5deg)",
-          }
+          boxShadow: "0 6px 20px rgba(0,0,0,0.12) !important",
+          transform: "translateY(-2px)"
         }
       }}
     >
@@ -51,8 +52,7 @@ const SolutionCard = ({ solution }) => {
           {t(`${solution.translationKey}.description`)}
         </MDTypography>
         <Button
-          component={RouterLink}
-          to={`/solutions/${solution.id}`}
+          {...linkProps}
           variant="contained"
           size="small"
           sx={{
@@ -62,7 +62,6 @@ const SolutionCard = ({ solution }) => {
             color: "#ffffff !important",
             backgroundColor: `${solution.accentColor} !important`,
             "&:hover": {
-              transform: "scale(1.05)",
               backgroundColor: `${solution.accentColor} !important`,
               filter: "brightness(0.85)",
               color: "#ffffff !important"

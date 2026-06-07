@@ -3,7 +3,11 @@
   "pageSubtitle": "AI-powered products built by Geny Systems to solve real business problems",
   "meta": {
     "title": "Solutions | Geny Systems",
-    "description": "Explore AI-powered business solutions by Geny Systems. From intelligent receipt scanning to automated expense management, our products help Romanian businesses work smarter."
+    "description": "Explore AI-powered products built by Geny Systems — from eDecont.ro receipt scanning and expense automation to genyHealth.ai health and genomics intelligence."
+  },
+  "genyhealth": {
+    "name": "genyHealth.ai",
+    "description": "A personalized health and genomics intelligence platform — turning health and genetic data into clear, actionable insights."
   },
   "edecont": {
     "name": "eDecont.ro",

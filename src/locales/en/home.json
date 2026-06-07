@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Enterprise AI Solutions Built For You",
-    "subtitle": "Geny Systems delivers intelligent automation through cutting-edge LLM chatbots, RAG systems, and AI agents—tailored for enterprises and innovative startups.",
+    "title": "Production AI, built for the real world",
+    "subtitle": "Geny Systems is a model-agnostic AI product studio. We design, build, and run AI agents, RAG systems, and automation across Anthropic Claude, Microsoft Azure AI Foundry, and OpenAI — and ship our own products, from eDecont.ro to genyHealth.ai.",
     "ctaText": "Contact Sales"
   },
   "sections": {
@@ -9,25 +9,30 @@
     "whyChoose": "Why Choose Geny Systems",
     "advancedRAG": {
       "title": "Advanced RAG Systems",
-      "description": "Our Retrieval-Augmented Generation systems provide context-aware responses by combining the power of large language models with your proprietary data. Achieve higher accuracy and relevance in every interaction."
+      "description": "Our retrieval-augmented generation systems ground large language models in your proprietary data — accurate, source-cited answers instead of guesses. Model-agnostic, and built to run in production."
     }
   },
   "benefits": {
     "expertTeam": {
-      "title": "Expert Team",
-      "description": "Deep experience in systems architecture combined with cutting-edge AI innovation"
+      "title": "We Build & Operate",
+      "description": "We run our own AI products in production — so your project benefits from patterns proven in the real world, not slideware."
     },
     "productionReady": {
       "title": "Production-Ready",
-      "description": "Enterprise-grade implementation from day one, built for scale and reliability"
+      "description": "Enterprise-grade from day one — multi-tenancy, authentication, audit trails, and scale built in."
     },
     "flexibleScalable": {
       "title": "Flexible & Scalable",
-      "description": "Solutions that grow with your business needs, from startups to enterprises"
+      "description": "From a focused pilot to a multi-tenant platform, the architecture grows with your business."
     },
     "innovationFocused": {
-      "title": "Innovation-Focused",
-      "description": "Continuous improvement with the latest AI advances and best practices"
+      "title": "Model-Agnostic",
+      "description": "We build across Anthropic Claude, Azure AI Foundry, OpenAI and open models — the right engine for each problem, no vendor lock-in."
     }
+  },
+  "partners": {
+    "title": "Partners & platforms",
+    "claude": "Member of the Anthropic Claude Partner Network",
+    "azure": "Builds on Microsoft Azure AI Foundry"
   }
 }

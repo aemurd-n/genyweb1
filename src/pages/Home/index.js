@@ -43,7 +43,7 @@ const Home = () => {
       </MDBox>
 
       {/* Why Choose Us Section */}
-      <MDBox sx={{ py: 6, px: 2, backgroundColor: "rgba(224, 245, 254, 0.3)" }}>
+      <MDBox sx={{ py: 6, px: 2, backgroundColor: "#F8FAFB" }}>
         <Container maxWidth="lg">
           <MDTypography variant="h3" sx={{ mb: 4, textAlign: "center", fontWeight: "bold" }}>
             {t('home:sections.whyChoose')}
@@ -90,6 +90,30 @@ const Home = () => {
             </Grid>
             <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
               <StorageIcon sx={{ fontSize: 120, color: "primary.main" }} />
+            </Grid>
+          </Grid>
+        </Container>
+      </MDBox>
+
+      {/* Partners & Platforms */}
+      <MDBox sx={{ py: 5, px: 2, backgroundColor: "#F8FAFB", borderTop: "1px solid #E2E8F0" }}>
+        <Container maxWidth="lg">
+          <MDTypography
+            variant="overline"
+            sx={{ display: "block", textAlign: "center", mb: 2, color: "text.secondary", letterSpacing: 1 }}
+          >
+            {t('home:partners.title')}
+          </MDTypography>
+          <Grid container spacing={3} justifyContent="center">
+            <Grid item xs={12} sm="auto">
+              <MDTypography variant="body2" sx={{ textAlign: "center", fontWeight: 500 }}>
+                {t('home:partners.claude')}
+              </MDTypography>
+            </Grid>
+            <Grid item xs={12} sm="auto">
+              <MDTypography variant="body2" sx={{ textAlign: "center", fontWeight: 500 }}>
+                {t('home:partners.azure')}
+              </MDTypography>
             </Grid>
           </Grid>
         </Container>

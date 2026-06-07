@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Soluții Enterprise AI Construite Pentru Tine",
-    "subtitle": "Geny Systems oferă automatizare inteligentă prin chatbot-uri LLM de ultimă generație, sisteme RAG și agenți AI—personalizate pentru întreprinderi și startup-uri inovatoare.",
+    "title": "AI de producție, construit pentru lumea reală",
+    "subtitle": "Geny Systems este un studio de produse AI agnostic față de model. Proiectăm, construim și operăm agenți AI, sisteme RAG și automatizări pe Anthropic Claude, Microsoft Azure AI Foundry și OpenAI — și ne lansăm propriile produse, de la eDecont.ro la genyHealth.ai.",
     "ctaText": "Contactează Vânzări"
   },
   "sections": {
@@ -9,25 +9,30 @@
     "whyChoose": "De Ce Să Alegi Geny Systems",
     "advancedRAG": {
       "title": "Sisteme RAG Avansate",
-      "description": "Sistemele noastre de Generare Augmentată prin Regăsire oferă răspunsuri contextuale prin combinarea puterii modelelor lingvistice mari cu datele tale proprietare. Obține acuratețe și relevanță mai mari în fiecare interacțiune."
+      "description": "Sistemele noastre de generare augmentată prin regăsire ancorează modelele lingvistice mari în datele tale proprietare — răspunsuri exacte, cu surse citate, în loc de presupuneri. Agnostice față de model și construite pentru producție."
     }
   },
   "benefits": {
     "expertTeam": {
-      "title": "Echipă de Experți",
-      "description": "Experiență profundă în arhitectura sistemelor combinată cu inovație AI de ultimă generație"
+      "title": "Construim și Operăm",
+      "description": "Ne rulăm propriile produse AI în producție — astfel proiectul tău beneficiază de tipare dovedite în lumea reală, nu de simple prezentări."
     },
     "productionReady": {
       "title": "Pregătit pentru Producție",
-      "description": "Implementare de nivel enterprise din prima zi, construită pentru scalabilitate și fiabilitate"
+      "description": "De nivel enterprise din prima zi — multi-tenancy, autentificare, jurnale de audit și scalabilitate incluse."
     },
     "flexibleScalable": {
       "title": "Flexibil & Scalabil",
-      "description": "Soluții care cresc odată cu nevoile afacerii tale, de la startup-uri la întreprinderi"
+      "description": "De la un pilot punctual la o platformă multi-tenant, arhitectura crește odată cu afacerea ta."
     },
     "innovationFocused": {
-      "title": "Focalizat pe Inovație",
-      "description": "Îmbunătățire continuă cu cele mai recente progrese AI și cele mai bune practici"
+      "title": "Agnostic față de Model",
+      "description": "Construim pe Anthropic Claude, Azure AI Foundry, OpenAI și modele open-source — motorul potrivit pentru fiecare problemă, fără dependență de un singur furnizor."
     }
+  },
+  "partners": {
+    "title": "Parteneri și platforme",
+    "claude": "Membru al Anthropic Claude Partner Network",
+    "azure": "Construit pe Microsoft Azure AI Foundry"
   }
 }

@@ -3,7 +3,11 @@
   "pageSubtitle": "Produse alimentate de AI create de Geny Systems pentru a rezolva probleme reale de afaceri",
   "meta": {
     "title": "Soluții | Geny Systems",
-    "description": "Descoperă soluțiile de business alimentate de AI de la Geny Systems. De la scanarea inteligentă a bonurilor la gestionarea automatizată a cheltuielilor, produsele noastre ajută afacerile din România să lucreze mai eficient."
+    "description": "Descoperă produsele alimentate de AI create de Geny Systems — de la eDecont.ro (scanare bonuri și automatizarea cheltuielilor) la genyHealth.ai (inteligență pentru sănătate și genomică)."
+  },
+  "genyhealth": {
+    "name": "genyHealth.ai",
+    "description": "O platformă de inteligență pentru sănătate și genomică personalizată — transformă datele de sănătate și genetice în informații clare și acționabile."
   },
   "edecont": {
     "name": "eDecont.ro",

@@ -7,6 +7,14 @@
   },
   "items": [
     {
+      "question": "Cu ce modele AI lucrați?",
+      "answer": "Suntem agnostici față de model, prin proiectare. Construim pe Anthropic Claude, Microsoft Azure AI Foundry, OpenAI și modele open-source, alegând modelul potrivit pentru fiecare problemă, fără să te legăm de un singur furnizor. Suntem, de asemenea, membri ai Anthropic Claude Partner Network."
+    },
+    {
+      "question": "Construiți propriile produse sau doar proiecte pentru clienți?",
+      "answer": "Ambele. Geny Systems este un studio de produse — proiectăm, construim și operăm propriile produse AI (precum eDecont.ro pentru scanarea bonurilor și automatizarea cheltuielilor, și genyHealth.ai pentru inteligență în sănătate și genomică) și aplicăm aceeași inginerie de nivel producție și proiectelor personalizate ale clienților."
+    },
+    {
       "question": "Ce este Generarea Augmentată prin Regăsire (RAG)?",
       "answer": "RAG este o tehnică care combină modelele lingvistice mari cu sursele tale de date proprietare. Regăsește informații relevante din documentele sau bazele tale de date și folosește acel context pentru a genera răspunsuri precise, fundamentate. Acest lucru reduce halucinațiile și asigură că răspunsurile se bazează pe datele tale reale."
     },
