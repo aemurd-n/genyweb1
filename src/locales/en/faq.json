@@ -11,8 +11,8 @@
       "answer": "We're model-agnostic by design. We build across Anthropic Claude, Microsoft Azure AI Foundry, OpenAI, and open-source models, and choose the right one for each problem instead of locking you into a single vendor. We're also a member of the Anthropic Claude Partner Network."
     },
     {
-      "question": "Do you build your own products, or only client work?",
-      "answer": "Both. Geny Systems is a product studio — we design, build, and run our own AI products (such as eDecont.ro for receipt scanning and expense automation, and genyHealth.ai for health and genomics intelligence), and we apply the same production-grade engineering to custom client projects."
+      "question": "Is Geny Systems a product company or a services company?",
+      "answer": "We're a product-led AI company. Building and operating our own AI products is the core of what we do — eDecont.ro for fiscal receipt scanning and expense automation, and genyHealth.ai for health and genomics intelligence, with more AI products in development. The same reusable, model-agnostic infrastructure also powers selected productized deployments."
     },
     {
       "question": "What is Retrieval-Augmented Generation (RAG)?",

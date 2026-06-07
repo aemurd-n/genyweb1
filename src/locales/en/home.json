@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Production AI, built for the real world",
-    "subtitle": "Geny Systems is a model-agnostic AI product studio. We design, build, and run AI agents, RAG systems, and automation across Anthropic Claude, Microsoft Azure AI Foundry, and OpenAI — and ship our own products, from eDecont.ro to genyHealth.ai.",
+    "subtitle": "Geny Systems is a product-led AI company building and operating a portfolio of production AI applications — including eDecont.ro and genyHealth.ai — across finance, healthcare, and enterprise automation, on reusable, model-agnostic AI infrastructure for document intelligence, RAG, agents, and automation.",
     "ctaText": "Contact Sales"
   },
   "sections": {
