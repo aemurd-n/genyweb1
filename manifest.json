@@ -1,6 +1,6 @@
 {
   "short_name": "Geny Systems",
-  "name": "Geny Systems — Production AI Applications",
+  "name": "Geny Systems | Production AI Applications",
   "icons": [
     {
       "src": "favicon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#1A73E8",
+  "theme_color": "#0B1026",
   "background_color": "#ffffff"
 }
