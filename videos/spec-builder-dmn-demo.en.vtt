@@ -1,0 +1,150 @@
+WEBVTT
+
+1
+00:00:02.420 --> 00:00:07.210
+A lending manager types the car loan policy into the chat, in plain English.
+
+2
+00:00:07.260 --> 00:00:12.690
+Who is declined and why, how the rate is set, when an officer reviews.
+
+3
+00:00:12.740 --> 00:00:14.890
+Not a line of rule syntax.
+
+4
+00:00:14.940 --> 00:00:17.500
+Then our app gets to work.
+
+5
+00:00:17.980 --> 00:00:21.850
+Our app reads it sentence by sentence and writes the rules.
+
+6
+00:00:21.900 --> 00:00:24.170
+Then it checks them against the requirement:
+
+7
+00:00:24.220 --> 00:00:30.130
+it finds one rule it got wrong, corrects it, and confirms every item.
+
+8
+00:00:30.180 --> 00:00:36.290
+Then it writes the specification: forty-two numbered items, each traced to its sentence.
+
+9
+00:00:36.340 --> 00:00:40.450
+Two entities, nineteen fields, fifteen rules.
+
+10
+00:00:40.500 --> 00:00:45.790
+The first one sets the interest rate from the credit score, the first tier that holds.
+
+11
+00:00:45.840 --> 00:00:51.930
+Spec Builder builds a DMN decision model from that specification, for Camunda 7.
+
+12
+00:00:51.980 --> 00:00:55.470
+Thirty-seven build steps, every one checked off.
+
+13
+00:00:55.520 --> 00:00:58.990
+Its tests run on Camunda, and all eighty-five pass.
+
+14
+00:00:59.040 --> 00:01:03.130
+Then a second check reads every requirement item against the rules.
+
+15
+00:01:03.180 --> 00:01:05.610
+Forty-two of forty-two, correct.
+
+16
+00:01:05.660 --> 00:01:13.350
+Our app's own report documents every entity, field and rule of the decision model it built,
+
+17
+00:01:13.400 --> 00:01:15.610
+the way your team would document one by hand.
+
+18
+00:01:15.660 --> 00:01:20.830
+It writes test cases from the requirement and runs them against the model.
+
+19
+00:01:20.880 --> 00:01:23.930
+Eighty-five tests, and all eighty-five pass.
+
+20
+00:01:23.980 --> 00:01:27.880
+Each one lists its inputs and the values it expects.
+
+21
+00:01:28.440 --> 00:01:33.590
+The decision model downloads as a standard DMN file, with its eighty-five tests.
+
+22
+00:01:33.640 --> 00:01:40.490
+The decision model opens right in the app.
+
+23
+00:01:40.540 --> 00:01:44.170
+Here, an application with five reasons to decline.
+
+24
+00:01:44.220 --> 00:01:49.970
+It is declined, and its rate, payment and debt-to-income ratio are worked out.
+
+25
+00:01:50.020 --> 00:01:53.650
+The rate comes from the credit score, the first tier that holds.
+
+26
+00:01:53.700 --> 00:01:57.250
+The amount financed is the price less the down payment.
+
+27
+00:01:57.300 --> 00:01:59.810
+Each decline rule adds its reason.
+
+28
+00:01:59.860 --> 00:02:03.150
+Here, the loan is larger than the car's value.
+
+29
+00:02:03.200 --> 00:02:10.470
+Then the decision: the first of decline, review or approve that holds.
+
+30
+00:02:10.520 --> 00:02:14.510
+The same case, on the standard DMN diagram.
+
+31
+00:02:14.560 --> 00:02:18.970
+Click a decision to see what it read, and what it decided for this case.
+
+32
+00:02:19.020 --> 00:02:24.950
+Then the tests run on three engines: C#, Drools and Camunda.
+
+33
+00:02:25.000 --> 00:02:29.210
+All eighty-five pass on each, with the same results.
+
+34
+00:02:29.260 --> 00:02:31.870
+Geny Systems.
+
+35
+00:02:31.920 --> 00:02:37.870
+Plain English business rules, built as DMN decision models, as C#,
+
+36
+00:02:37.920 --> 00:02:43.150
+or as InRule rule applications in your own environment, on your InRule licence.
+
+37
+00:02:43.200 --> 00:02:45.500
+Let's talk about your rule backlog.
+
